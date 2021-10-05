@@ -18,7 +18,7 @@ public class Calculation {
                 (a,b)-> new Number(a.getA() * b.getA() - a.getB() * b.getB(),a.getA() * b.getB() - a.getB() * b.getA()),
                 (a,b) -> new Number((a.getA() * b.getA() + a.getB() * b.getB()) / (Math.pow(b.getA(), 2) + Math.pow(b.getB(), 2)),(a.getB() * b.getA() - a.getA() * b.getB()) / (Math.pow(b.getA(), 2) + Math.pow(b.getB(), 2))));
 
-        int eingabe = -0;
+        int eingabe = -1;
         int eingabeRechnung = 0;
         System.out.println("Bitte geben sie die erste Nummer für alle Rechner ein");
         Number number1 = new Number(Integer.parseInt(sc.nextLine()), Integer.parseInt(sc.nextLine()));
